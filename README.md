@@ -32,3 +32,7 @@ git clone https://github.com/AyishaT-Coder/DataCapsuleVMonUbuntu.git
 # Execute ansible playbook
 
 ansible-playbook -k -i hosts site.yml 
+
+# Original redhat repo is referenced from following github url
+
+https://github.com/Data-to-Insight-Center/Data-Capsule-Appliance-Host
