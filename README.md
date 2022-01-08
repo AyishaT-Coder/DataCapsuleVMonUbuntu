@@ -1,4 +1,5 @@
 # Data Capsule VM on Ubuntu
+
 Data capsule virtual machine existed in redhat OS flavor which needed subscription. To make it cost effective and widely usable, Ansible playbooks for Ubuntu OS Data Capsule VMs have been written.
 
 # Need for ubuntu based data capsule VMs:
@@ -9,4 +10,25 @@ Data capsule virtual machine existed in redhat OS flavor which needed subscripti
 4. Complexity is reduced as the users are generally required to clone the repo and execute the playbook.
 5. Reduction in infrastructure cost (physical server is $1500 -$7000 and additional electricity, air conditioning and space requirements).
 
+# Ansible host server specification
 
+Operating system: Ubuntu 20.04
+Jetstream server specifications
+Size: m1.small
+CPU: 2
+Mem: 4GB
+Disk: 20GB
+
+# Github urls
+
+**Ubuntu data capsule vm**
+
+https://github.com/AyishaT-Coder/DataCapsuleVMonUbuntu.git
+
+# Clone the repo
+
+git clone https://github.com/AyishaT-Coder/DataCapsuleVMonUbuntu.git
+
+# Execute ansible playbook
+
+ansible-playbook -k -i hosts site.yml 
