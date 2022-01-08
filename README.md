@@ -36,3 +36,9 @@ ansible-playbook -k -i hosts site.yml
 # Original redhat repo is referenced from following github url
 
 https://github.com/Data-to-Insight-Center/Data-Capsule-Appliance-Host
+
+# Deployment of ansible host and target VM
+
+1. Add the Ip addresses of target VMs in the hosts file
+2. Run ansible playbook with the login user using the follwoing command
+   ansible-playbook --user=<login_username> -k -i hosts site.yml --ask-become-pass
